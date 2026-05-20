@@ -1,51 +1,39 @@
 # Arabic AI Text Detection Using Hadoop, Apache Spark, and Machine Learning
 
 ## Project Overview
-This project builds a scalable Arabic AI-generated text detection system using Hadoop HDFS, Apache Spark, PySpark MLlib, and machine learning models.
+This project implements a scalable Big Data pipeline for detecting AI-generated Arabic text using Hadoop HDFS, Apache Spark, PySpark MLlib, TF-IDF, and machine learning models.
 
-## Dataset
-The dataset contains Arabic text samples labeled as human-written or AI-generated. The data was stored in HDFS and processed using Apache Spark.
+## Repository Structure
+- data/raw: raw Arabic dataset
+- data/processed: processed and parquet data
+- src: source code for preprocessing, modeling, and streaming
+- results: final evaluation outputs
+- reports/figures: screenshots and figures
+- Documentation: final report and presentation
+- notebooks: EDA and experimentation notebooks
 
-## Technologies Used
-- Hadoop HDFS
-- Apache Spark
-- PySpark
-- Spark MLlib
-- TF-IDF
+## Source Code
+- arabic_ai_project.py
+- streaming_pipeline.py
+- create_figures_results.py
+
+## Models
 - Logistic Regression
 - Random Forest
 - Linear SVM
-- Spark Structured Streaming
-
-## Pipeline
-1. Store dataset in HDFS
-2. Load data using Spark
-3. Clean Arabic text
-4. Extract TF-IDF features
-5. Train machine learning models
-6. Evaluate models using Accuracy, F1-Score, and ROC-AUC
-7. Simulate real-time processing using Spark Structured Streaming
 
 ## Results
 Linear SVM achieved the best performance:
-
 - Accuracy: 93.67%
 - F1-Score: 93.67%
 - ROC-AUC: 98.22%
 
-## Screenshots
-Project screenshots are available in:
+## Execution Order
+1. Load dataset into HDFS
+2. Run preprocessing and feature extraction
+3. Train and evaluate machine learning models
+4. Run Spark Structured Streaming simulation
+5. Review results and figures
 
-`reports/figures/`
-
-They include:
-- HDFS storage verification
-- Spark preprocessing output
-- Model evaluation results
-- Confusion matrix results
-- Streaming output
-- Project directory structure
-
-## How to Run
-```bash
-spark-submit src/arabic_ai_project.py
+## Technologies
+Hadoop HDFS, Apache Spark, PySpark MLlib, TF-IDF, Spark Structured Streaming, Python.
