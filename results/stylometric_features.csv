@@ -1,0 +1,5 @@
+Feature,Description
+word_count,Total number of words in Arabic text
+avg_word_length,Average word length in Arabic text
+tfidf_features,TF-IDF vector representation using Spark MLlib
+label,Binary class label: 0 Human, 1 AI

@@ -1,0 +1,4 @@
+Pipeline,Processing_Type,Evidence
+Batch_Modeling,Spark Batch Processing,Trained Logistic Regression Random Forest and Linear SVM
+Streaming,File-Based Spark Structured Streaming,Simulated real-time Arabic text stream
+Storage,Hadoop HDFS,Raw processed and parquet directories verified
