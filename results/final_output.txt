@@ -1,0 +1,82 @@
+=== Spark Session Started ===
+=== Dataset Loaded From HDFS ===
+Total Rows: 6827
+=== Original Schema ===
+root
+ |-- text: string (nullable = true)
+ |-- label: string (nullable = true)
+ |-- source_model: string (nullable = true)
+ |-- generation_method: string (nullable = true)
+ |-- clean_text: string (nullable = true)
+ |-- word_count: string (nullable = true)
+ |-- avg_word_length: string (nullable = true)
+
+=== Arabic Text Preprocessing Completed ===
+=== Converted Data Types ===
+root
+ |-- text: string (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- source_model: string (nullable = true)
+ |-- generation_method: string (nullable = true)
+ |-- clean_text: string (nullable = true)
+ |-- word_count: integer (nullable = true)
+ |-- avg_word_length: double (nullable = true)
+
+=== Cleaned Dataset Count ===
+Clean Rows: 5965
+=== Label Distribution ===
++-----+-----+
+|label|count|
++-----+-----+
+|    1| 2985|
+|    0| 2980|
++-----+-----+
+
+=== Processed Data Saved as Parquet in HDFS ===
+=== Feature Vector Sample ===
++-------------------------+-----+
+|features                 |label|
++-------------------------+-----+
+|[93.0,5.43010752688172]  |0    |
+|[86.0,5.465116279069767] |1    |
+|[117.0,5.769230769230769]|1    |
+|[104.0,4.913461538461538]|0    |
+|[121.0,5.404958677685951]|1    |
++-------------------------+-----+
+only showing top 5 rows
+
+=== Train/Test Split ===
+Train: 4828
+Test: 1137
+=== Logistic Regression Model Trained ===
+=== Prediction Sample ===
++-----+----------+----------------------------------------+
+|label|prediction|probability                             |
++-----+----------+----------------------------------------+
+|1    |0.0       |[0.8925756098833594,0.10742439011664062]|
+|1    |0.0       |[0.7855013971528819,0.21449860284711808]|
+|0    |0.0       |[0.5487299221933838,0.4512700778066162] |
+|0    |0.0       |[0.864552093608655,0.13544790639134496] |
+|0    |0.0       |[0.8141831803610693,0.1858168196389307] |
+|0    |0.0       |[0.87273960795523,0.12726039204477002]  |
+|0    |0.0       |[0.7856914050476587,0.21430859495234134]|
+|0    |1.0       |[0.336065414148941,0.663934585851059]   |
+|0    |0.0       |[0.7011473928648482,0.2988526071351518] |
+|0    |0.0       |[0.7002590722702468,0.29974092772975325]|
++-----+----------+----------------------------------------+
+only showing top 10 rows
+
+=== Final Results ===
+Accuracy = 0.6807387862796834
+F1 Score = 0.6806869169810973
+=== Confusion Matrix ===
++-----+----------+-----+
+|label|prediction|count|
++-----+----------+-----+
+|    1|       0.0|  174|
+|    0|       0.0|  380|
+|    1|       1.0|  394|
+|    0|       1.0|  189|
++-----+----------+-----+
+
+=== Spark Session Stopped ===
