@@ -1,0 +1,12 @@
+Implemented Stylometric Features
+
+1. Word Count
+2. Average Word Length
+3. Character Frequency
+4. Sentence Length Distribution
+5. TF-IDF Features using Spark MLlib
+6. Arabic text normalization
+7. Stop-word removal
+8. Tokenization and preprocessing
+
+These features were extracted using distributed Spark DataFrame operations.

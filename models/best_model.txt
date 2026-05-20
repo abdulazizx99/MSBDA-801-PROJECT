@@ -1,0 +1,7 @@
+Best Model: Linear SVM
+
+Accuracy: 0.9367
+F1-Score: 0.9367
+ROC-AUC: 0.9822
+
+This model achieved the best overall classification performance on the Arabic AI-text detection dataset.

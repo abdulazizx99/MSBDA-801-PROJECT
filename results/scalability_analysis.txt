@@ -1,0 +1,13 @@
+Scalability Analysis
+
+Batch Processing:
+The Spark batch pipeline successfully trained Logistic Regression, Random Forest, and Linear SVM models on distributed Arabic text data.
+
+Streaming Processing:
+Spark Structured Streaming simulated real-time Arabic text ingestion using a file-based streaming source.
+
+Observation:
+Streaming latency remained stable during continuous ingestion while batch processing achieved higher throughput for large-scale offline processing.
+
+Conclusion:
+Batch processing is more efficient for large historical datasets, while streaming is suitable for real-time AI-text detection systems.

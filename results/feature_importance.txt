@@ -1,0 +1,13 @@
+Feature Importance Analysis
+
+The TF-IDF representation showed that specific Arabic writing patterns contributed strongly to classification performance.
+
+Linear SVM achieved the highest ROC-AUC score and demonstrated stable separation between AI-generated and human-written Arabic text.
+
+Important indicators included:
+- Repeated stylistic structures
+- Consistent sentence lengths
+- Repetitive token patterns
+- Low linguistic variability in AI-generated content
+
+Human-written text showed higher lexical diversity and more variation in sentence structure.
