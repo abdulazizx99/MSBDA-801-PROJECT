@@ -22,6 +22,32 @@ This project implements a scalable Big Data pipeline for detecting AI-generated 
 - Random Forest
 - Linear SVM
 
+## Feature Engineering
+
+Several text-based and statistical features were extracted from Arabic text samples before model training, including:
+
+- Word Count
+- Average Word Length
+- TF-IDF Vectorization
+- Text Cleaning and Normalization
+- Feature Vector Construction using Spark MLlib
+
+The processed data was stored using Parquet format in Hadoop HDFS for scalable distributed processing.
+
+## Machine Learning Models
+
+Three machine learning models were trained and evaluated:
+
+- Logistic Regression
+- Random Forest Classifier
+- Linear Support Vector Machine (SVM)
+
+The models were evaluated using:
+- Accuracy
+- F1-Score
+- ROC-AUC
+- Confusion Matrix
+
 ## Results
 Linear SVM achieved the best performance:
 - Accuracy: 93.67%
